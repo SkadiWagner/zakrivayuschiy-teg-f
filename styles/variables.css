@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+
+:root {
+    --currentColor: #000000; 
+    --main-font: Inter-Variable, "Arial", sans-serif;
+    --accent-font: PressStart2P, "Arial", sans-serif;
+    --title-width: 700;
+    --maintext-width: 400;
+    --background-color: white;
+    --background-image: url(../images/background.png);
+    --heartCountur: black;
+    --sparks: #FF0000;
+
+    --stripes: #d3d3d3;
+    --gradient-top: #e7e7e7;
+    --gradient-bottom: #1a1a1a;
+  }
