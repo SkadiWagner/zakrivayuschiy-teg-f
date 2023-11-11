@@ -5,22 +5,54 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
+
 :root.theme-light {
-
-}
-
-:root.theme-dark {
-    --currentColor: #00CC14; 
-    --main-font: Inter-Variable, "Arial", sans-serif;
-    --accent-font: PressStart2P, "Arial", sans-serif;
-    --title-width: 785;
-    --maintext-width: 465;
-    --background-color: #000000;
-    --heartCountur: #00CC14;
+    --currentColor: #000000; 
+    --main-font: Inter-Variable;
+    --accent-font: PressStart2P;
+    --title-width: 700;
+    --maintext-width: 400;
+    --background-color: white;
+    --background-image: url(../images/background.png);
+    --heartCountur: black;
     --sparks: #FF0000;
-
-    --stripes: #000;
-    --gradient-top: #007f0c;
-    --gradient-bottom: #004306;
+    --stripes: #d3d3d3;
+    --gradient-top: #e7e7e7;
+    --gradient-bottom: #1a1a1a;
+    --buttonColor: white;
 }
 
+:root.theme_dark {
+    --currentColor: #00CC14;  
+    --main-font: Inter-Variable;
+    --accent-font: PressStart2P;
+    --title-width: 785; 
+    --maintext-width: 465; 
+    --background-color: #000000; 
+    --heartCountur: #00CC14; 
+    --sparks: #FF0000;
+    --stripes: #000; 
+    --gradient-top: #007f0c; 
+    --gradient-bottom: #004306; 
+    --buttonColor: #00CC14;
+  }
+
+ 
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+        --currentColor: #00CC14;  
+        --main-font: Inter-Variable;
+        --accent-font: PressStart2P;
+        --title-width: 785; 
+        --maintext-width: 465; 
+        --background-color: #000000; 
+        --heartCountur: #00CC14; 
+        --sparks: #FF0000;
+        --stripes: #000; 
+        --gradient-top: #007f0c; 
+        --gradient-bottom: #004306;   
+        --buttonColor: #00CC14;
+      }
+
+  }
