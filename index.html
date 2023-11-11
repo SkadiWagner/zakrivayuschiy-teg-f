@@ -359,31 +359,31 @@
         aria-controls="dialog-id"
         >
           <svg class="save__floppy svg-modal" viewBox="0 0 40 40">
-            <use href="./svg/floppy.svg#floppy-icon" fill="currentColor">
+            <use href="./svg/floppy.svg#floppy-icon" fill="currentColor"></use>
           </svg> 
-          <p class="save__text">Сохранить на память</p>
+          <span class="save__text">Сохранить на память</span>
         </button>
       </div>
       <dialog id="dialog-id" class="modal">
         <div class="modal__content">
           <svg class="close__floppy" viewBox="0 0 40 40">
-            <use href="./svg/floppy.svg#floppy-icon" fill="currentColor">
+            <use href="./svg/floppy.svg#floppy-icon" fill="currentColor"></use>
          </svg>
          <p class="modal-text">Вставьте
           дискету, чтобы продолжить
          </p> 
         </div>
-        <button 
-        type="button" 
-        onclick="window['dialog-id'].close()"
-        class="modal-close"
-        >
-        ок
-        </button>
+        <form method="dialog">
+          <button 
+              type="button" 
+              onclick="window['dialog-id'].close()"
+              class="modal-close"
+          >
+              ок
+          </button>
+      </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
-
-
