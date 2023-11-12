@@ -39,3 +39,87 @@
       opacity: 0;
     }
   }
+
+  /* анимация сердца */
+
+.sparks {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.is-liked .sparks {
+  animation: iskra 0.3s ease-in forwards;
+  opacity: 1;
+}
+
+.like-icon .heart .contour {
+  fill: var(--heartCountur);
+  transition: fill 0.3s;
+}
+
+.like-icon .heart .main-body {
+  fill: transparent;
+  transition: fill 0.3s 0.05s; 
+}
+
+.like-icon .heart .core {
+  fill: transparent;
+  transition: fill 0.3s 0.3s; 
+}
+
+.like-icon:hover .heart .contour {
+  fill: var(--heartCountur);
+}
+
+.like-icon:hover .heart .main-body {
+  fill: var(--heartCountur);
+}
+
+.like-icon:hover .heart .core {
+  fill: var(--heartCountur);
+}
+
+.like-icon:active .heart .main-body,
+.like-icon:active .heart .core {
+  fill: var(--sparks); 
+  transition: fill 0.3s; 
+}
+
+.like-icon .heart {
+  transform-origin: center;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.like-icon .heart .spark {
+  opacity: 0;
+  animation-name: sparkAnimation;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.like-icon.is-liked .heart .contour {
+  fill: var(--sparks);
+}
+
+.like-icon.is-liked .heart .main-body {
+  fill: var(--sparks);
+}
+
+.like-icon.is-liked .heart .core {
+  fill: var(--sparks);
+}
+
+.like-icon.is-liked .heart {
+  animation-name: scaleHeart;
+  animation-delay: 0.1s;
+}
+
+.like-icon.is-liked .heart .spark {
+  opacity: 1;
+  animation-delay: 0.3s;
+}

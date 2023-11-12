@@ -22,7 +22,7 @@
     --buttonColor: white;
 }
 
-:root.theme_dark {
+:root.theme-dark {
     --currentColor: #00CC14;  
     --main-font: Inter-Variable;
     --accent-font: PressStart2P;
@@ -40,7 +40,7 @@
  
   
   @media (prefers-color-scheme: dark) {
-    :root {
+    :root.theme-auto {
         --currentColor: #00CC14;  
         --main-font: Inter-Variable;
         --accent-font: PressStart2P;
