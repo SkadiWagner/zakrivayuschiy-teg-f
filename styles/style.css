@@ -396,11 +396,45 @@
   font-size: 14px;
   line-height: 12.6px;
   width: 100%;
+  position: relative;
+}
+
+.modal-close:focus {
+  outline: none;
+}
+
+.modal-close:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--currentColor); 
+  transition: box-shadow 0.3s ease; 
+}
+
+.modal-close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: var(--currentColor);
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.modal-close:hover::after {
+  transform: scaleX(1);
 }
 
 .close__floppy {
   width: 70px;
   height: 39px;
+}
+
+.modal-close-text {
+  position: relative;
+  z-index: 10;
+  color: var(--buttonColor);
+  mix-blend-mode: difference;
 }
 
 
